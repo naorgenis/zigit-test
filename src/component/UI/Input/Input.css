@@ -1,0 +1,13 @@
+.Input {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  font-size: 15px;
+  color: gray;
+}
+
+.InputElement {
+  background-color: white;
+}

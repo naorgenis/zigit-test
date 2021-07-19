@@ -1,0 +1,16 @@
+.Avatar {
+  width: 100px;
+  height: 100px;
+  margin-left: 30%;
+}
+
+.Green {
+  width: 100%;
+  height: 100%;
+  background-color: green;
+}
+.Red {
+  width: 100%;
+  height: 100%;
+  background-color: red;
+}

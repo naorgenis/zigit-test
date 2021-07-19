@@ -1,0 +1,9 @@
+.LoginScreen {
+  display: flex;
+  justify-content: center;
+  border: black 1px;
+  border-style: solid;
+  width: 40%;
+  margin-left: 30%;
+  margin-top: 5%;
+}

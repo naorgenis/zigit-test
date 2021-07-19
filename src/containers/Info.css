@@ -1,0 +1,10 @@
+.BasicTable {
+  justify-content: center;
+  text-align: center;
+
+  margin: 20px;
+}
+
+.UserTable {
+  padding-bottom: 10px;
+}

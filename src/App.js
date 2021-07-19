@@ -1,24 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import LoginScreen from "./Screens/LoginScreen/LoginScreen";
+import InfoScreen from "./Screens/InfoScreen/InfoScreen";
+import { Switch, Route } from "react-router-dom";
+import "./App.css";
+import { useEffect } from "react";
+import * as actions from "./store/action/auth";
+import { useDispatch } from "react-redux";
 
 function App() {
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    checkAuth();
+  }, []);
+
+  const checkAuth = () => {
+    dispatch(actions.authCheck());
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Switch>
+      <Route path="/info" component={InfoScreen} />
+      <Route path="/" component={LoginScreen} />
+    </Switch>
   );
 }
 
